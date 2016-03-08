@@ -34,9 +34,9 @@ html, body {
 }
 .clearfix:after {
 	content: ""; 
-   display: block;
-   height: 0;
-   clear: both;
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 /*-----background---*/
@@ -74,7 +74,6 @@ html, body {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	margin-top: 11.5%;
-
 }
 .background_foot {
 	width: 100%;
@@ -94,22 +93,21 @@ html, body {
 	display: inline-block;
 	padding-top: 5.5%;
 }
-
-
 .nav {
 	display: block;
 	margin: 22px 0;
 	padding-top: 5%;
-
 	float: right;
+}
+.small {
+	display: none;
 }
 .menu__item{
 	display: inline-block;
 	margin-left: 43px;
 } 
-.menu .menu__item:first-child{
+.menu__item:first-child{
 	margin-left: 0px;
-
 }
 .menu__link{
 	display: inline-block;
@@ -149,8 +147,6 @@ html, body {
 	background: url(../img/st.png);
 	background-position: 0px 43px;
 }
-
-
 .text-head {
 	display: inline-block;
 	float: left;
@@ -170,7 +166,6 @@ html, body {
 	color: #edbfff;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .text-head__other-line {
 	font-family:"Open Sans Light";
 	font-size: 18px;
@@ -209,9 +204,6 @@ html, body {
 	position: absolute;
 	right: 16.5%;
 	bottom: -15%
-
-}
-.slide-link--head {
 }
 .slide-link__link {display: inline-block;
 	height: 10px;
@@ -233,13 +225,11 @@ html, body {
 	text-align: left;
 	margin: 7.8% 0px 0 15px ;
 	padding: 0 0 0 49px;
-
 }
  .blue-text__second-line{
  	color: #fff;
  	font-size: 30px;
 	text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
-
 }
 .blue-text__other-line{
 	font-size: 16px;
@@ -262,35 +252,28 @@ html, body {
 	margin: 25px 10px 29% 0;
 	text-decoration: none;
 }
-
 .blue-text__link:hover {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
-
 .blue-text--left{
-	float: left;
-	
+	float: left;	
 }
 .blue-text__img {
  	position: absolute;
 	content: "";
-	 display: inline-block;
+	display: inline-block;
 	background: url(../img/sp1.png);
-	 width: 32px;
-	 height: 32px;
+	width: 32px;
+	height: 32px;
 	top: 6px;
 	left:0px;
 }
-
 .blue-text--right {
 	float: right;
 	}
 .blue-text--right .blue-text__img {
 	background-position:  32px ;
 }
-
- 	 
-
 .blue-text--center .blue-text__img  {
 	background-position: 64px ;
 }
@@ -298,7 +281,6 @@ html, body {
 
 /*------------white line--------*/
 .slide-text {
-
 	display: inline-block;
 	position: relative;
 	float: left;
@@ -311,7 +293,6 @@ html, body {
 	text-align: left;
   	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
-
 .slide-text__second-line {
   font-size: 30px;
   font-family: "League Gothic";
@@ -331,11 +312,10 @@ html, body {
 	color:#454545;
   	margin-top: 10px;
 }
-
 .slide-text__img{
 	position: absolute;
-	 width: 49px;
-	 height: 51px;
+	width: 49px;
+	height: 51px;
 	background: url(../img/Layer2.png);
 	top: 20px;
 	left:-22px;
@@ -360,8 +340,6 @@ html, body {
 	border-radius: 12px;
 	background: #000;
 }
-
-
 .text-wrap {
 	display: inline-block;
 	float: right;
@@ -372,43 +350,38 @@ html, body {
 .small-text{
 	position: relative;
 	padding-left: 66px;
-	margin-top: -8px
-	
+	margin-top: -8px	
 }
 .text-wrap-head {
-  font-size: 30px;
-  font-family: "League Gothic";
-  color: rgb(69, 69, 69);
-  text-transform: uppercase;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
-  margin-top: 30px;
-  margin-bottom: 0px;
-
+	font-size: 30px;
+	font-family: "League Gothic";
+	color: rgb(69, 69, 69);
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+	margin-top: 30px;
+	margin-bottom: 0px;
 }
-
 .small-text__second-line {
-  font-size: 16px;
-  font-family: "Open Sans Extrabold";
-  color: rgb(69, 69, 69);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
-  margin-top: 30px;
+	font-size: 16px;
+	font-family: "Open Sans Extrabold";
+	color: rgb(69, 69, 69);
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+	margin-top: 30px;
 }
-
 .small-text__other-line {
 	font-family:"Open Sans Light";
 	font-size: 16px;
 	line-height: 24px;
 	color:#454545;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
-  margin-top: 5px;
-  height: 22px;
-  overflow: hidden;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+	margin-top: 5px;
+	height: 22px;
+	overflow: hidden;
 }
-
 .small-text__img{
 	position: absolute;
-	 width: 49px;
-	 height: 49px;
+	width: 49px;
+	height: 49px;
 	background: url(../img/sp2.png);
 	top: -5px;
 	left:2px;
@@ -416,9 +389,9 @@ html, body {
 .small-text__link {
 	display: inline-block;
 	float: right;
-  color: rgb(69, 69, 69);
+  	color: rgb(69, 69, 69);
 	font-size: 18px;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 	margin: 22px 22px 0 0;
 	text-decoration: none;
 }
@@ -493,10 +466,6 @@ html, body {
 }
 
 /*-----grey line----*/
-
-		
-
-
 .grey-text {
 	margin-top: 10%;
 	margin-bottom: 9.2%;
@@ -513,10 +482,7 @@ html, body {
 }
 .grey-text__span {
   color: rgb(185, 185, 185);
-
 }
-
-
 .grey-text__second-line {
   font-size: 16px;
   font-family: "Georgia";
@@ -525,9 +491,6 @@ html, body {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
   margin-bottom: 12px;
 }
-
-
-
 .grey-text__other-line {
 	font-family:"Open Sans Light";
 	font-size: 16px;
@@ -538,7 +501,6 @@ html, body {
 	margin-top: 5px;
 	height: 122px;
 	overflow: hidden;
-
 }
 .grey-text--left-ghost{
 	display: none;
@@ -550,7 +512,6 @@ html, body {
 .grey-text--left {
 	float: left;
 }
-
 .grey-text--left-ghost .grey-text__first-line {
   font-size: 30px;
   color: rgb(69, 69, 69);
@@ -569,23 +530,17 @@ html, body {
 .grey-text--center .grey-text__first-line {
   font-size: 30px;
   color: rgb(69, 69, 69);
-
 }
-
 .grey-text--center .grey-text__other-line {
   height: 167px;
 }
-
 .grey-text--right {
-	
 	float: right;
 }
 .grey-text--right .grey-text__first-line {
   font-size: 30px;
   color: rgb(69, 69, 69);
-
 }
-
 .grey-text--right .grey-text__other-line {
   height: 167px;
 }
@@ -594,36 +549,29 @@ html, body {
 
 .footer {
 	 padding-top: 45px;
-	 padding-bottom:40px;
-	
+	 padding-bottom:40px;	
 }
 .nav-foot {
 	float: left;
-	
 	text-align: left;
 }
 .menu--footer .menu__item{
-
 	margin: 0 40px 0 0;
-
 }
 .menu--footer .menu__link{
 	font-size: 20px;
 	padding: 0;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
-
 .nav__par{
-	
 	float: right;
 	font-size: 12px;
 	color: #fff;
 	font-family: "Open Sans Light";
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-	 margin-top: 10px;
+	margin-top: 10px;
 }
 .nav__span{
-	
 	font-family: "Open Sans Extrabold";
 }
 
