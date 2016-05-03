@@ -179,6 +179,11 @@ background-color: rgba(0, 0, 0, 0.5);
 	vertical-align: text-top;
 	margin-right: 30px;
 }
+.footer img {
+	width:40px; 
+	height: 35px;
+
+}
 .tab-content {
 	padding: 5%;
 }
