@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-tabs.css"> 
+	<link rel="stylesheet" href="css/normalize.css"> 
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-2.2.2.js"></script>
+	<script src="js/lodash.js" type="text/javascript"></script>
+	<script src="js/lesson.js"></script>
+	<script src="js/lesson2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script src="js/jquery.fancybox.js" type="text/javascript" ></script> 
+	<script src="js/script.js"></script>
+	<script type="text/template" id="template">
+
+		<ul class="nav nav-tabs col-xs-3 col-md-2">
+
+			<% lesson.forEach(function(item) { %>
+
+				<li class=""><a data-toggle="tab" href="#<%-item.theme + item.lessonNum %>"><%-item.theme%> Урок №<%-item.lessonNum%></a></li>
+				<%}) %>
+
+		</ul>
+
+		<div class="tab-content col-xs-9 col-md-10">
+
+			<% lesson.forEach(function(item) { %>
+
+				<div id="<%-item.theme + item.lessonNum %>" class="tab-pane fade">
+
+					<h3> <%-item.theme%> Урок №<%-item.lessonNum%></h3>
+					<h4> <%=item.text%></h4>
+					<% var number =item.theme + item.lessonNum;
+					if (item.image) {%>
+
+						<% item.image.forEach(function(item, i) { %>
+
+							<div class="thumbnail col-xs-8 col-md-3 ">
+								<h4><%-item.text%></h4>
+								<a class="fancyimage" data-fancybox-group="<%-number%>" href="<%-item.url%>"> 
+									<img class="img-responsive" src="<%-item.url%>" alt="<%-item.text%>">
+								</a> 
+							</div>
+
+							<%}) %>
+						<%}%>
+
+						
+						<div class="col-xs-12 col-md-10 ">
+							<ol>
+								<% var t=item.liText;
+								for ( var i = 0; i < item.liText.length; i++) {%>
+									<li><%=item.liText[i]%></li>
+									<%} %>
+								</ol>
+							</div>
+
+
+							
+
+							<div class="col-xs-12 ">
+								<h3>Решение</h3>
+								<div class="thumbnail col-xs-8 col-md-3">
+
+									<a class="fancyimage" data-fancybox-group="<%number + 2%>" href="<%-item.link.urlImg%>"> 
+										<img class="img-responsive" src="<%-item.link.urlImg%>" alt="<% %>">
+									</a>
+								</div>
+								<div class="col-xs-12">
+									<p><a href="<%-item.link.urlPrew%>" class="buttonWork small" target="_blank" role="button">посмотреть демо</a> <a href="<%-item.link.urlCode%>" class="buttonWork small" target="_blank"  role="button">посмотреть код</a></p> 
+								</div>
+							</div>
+
+						</div>
+						<%}) %>
+
+</div>
+
+</div>
+</div>
+</script>
+</head>
+<body>
+	<div class="container">
+
+	<div class="wrapper">
+	<h3>Learning Frontend Web Developer on the course in the school  <a href="http://fe.goit.ua/" target="_blank">GoIT</a>. </h3>
+		<h4>FRONT-END COURSE SKILLS:</h4>
+		<ul>
+			<li>HTML5, CSS, JS;</li>
+			<li>CSS-frameworks: Bootstrap, Pure;</li>
+			<li>GIT, Github;</li>
+			<li>jQuery, AJAX;</li>
+			<li>Node.JS on basic level, working with NPM;</li>
+			<li>Build tools: Grunt, Gulp, ES6, Babel, JS, AMD;</li>
+			
+
+			
+			<li>Client optimization (csso, svgo, imgo);</li>
+			<li>Adaptive design;</li>
+			<li>Methodologies: BEM;</li>
+			<li>Sprites, graphic optimization, Retina support;</li>
+			<li>Strong knowledge of vanilla JS;</li>
+			<li>Prototyping in Javascript, creating classes;</li>
+			<li>Integrating and creating own jQuery-plugins;</li>
+			<li>Experience with LocalStorage;</li>
+			<li>Microtemplating on UI;</li>
+			<li>Command line on basic level.</li>
+		</ul>
+	</div>
+
+		<div class="wrapButton">
+			<button type="button" id="butt1" class="buttonWork">Посмотреть работы на HTML</button>
+			<button type="button" id="butt2" class="buttonWork">Посмотреть работы на JavaScript</button>
+		</div>	
+
+		<div class="row tabbable tabs-left ">
+
+		</div>
+	</div>
+
+
+</div>
+<footer class="footer">
+	<div class="container">
+		<a href="https://www.facebook.com/profile.php?id=100007060695480" target="_blank" ><img src="image/facebook.png" width="40" height="35" alt="View  profile on LFaceBook"></a>
+
+		<a class="" href="mailto:konstanting@meta.ua "> konstanting@meta.ua  </a>
+
+		<a href="https://ua.linkedin.com/pub/konstantin-gnezdilov/119/a15/b7a" target="_blank" ><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="40" height="30" alt="См. профиль пользователя Konstantin Gnezdilov в LinkedIn" ></a>
+		
+		<!-- <a  target="_blank" href="https://ua.linkedin.com/pub/konstantin-gnezdilov/119/a15/b7a">
+			<img 
+			src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" 
+			 border="0" alt="View Syed Hussaini's profile on LinkedIn"> 
+		</a> 
+		<a   target="_blank" href="https://www.facebook.com/profile.php?id=100007060695480">
+			<img 
+			src="image/facebook2.png" 
+			border="0" alt="View  profile on LFaceBook"> 
+		</a>  -->
+
+	</div>
+	<form action=""></form>
+</footer>
+</body>
+</body>
+</html>

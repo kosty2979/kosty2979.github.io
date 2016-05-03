@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('../fonts/2211-webfont.eot');
+    src: url('../fonts/2211-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2211-webfont.woff2') format('woff2'),
+         url('../fonts/2211-webfont.woff') format('woff'),
+         url('../fonts/2211-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+body { 
+	margin-bottom: 100px;
+	background: black;
+	background: url(../image/fon5.jpg); 
+	background-attachment: fixed;  
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	 font-family: "open_sans", arial;
+	 line-height: 30px;
+}
+
+.ww { 
+	background: black;
+	background: url(../image/fon4.jpg); 
+	background-attachment: fixed;  
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	 
+}
+.ww2 { 
+	background: black;
+	 background: url(../image/fon6.jpg);  
+	background-attachment: fixed;  
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+*, .col-xs-12 { 
+	padding: 0;
+	margin: 0; 
+}
+.buttonWork>a{
+	display: block;
+
+}
+a.buttonWork{
+text-decoration:none;
+color: white;
+font-size: 14px;
+
+}
+.wrapper>h3{
+	text-align: center;
+	margin: 40px 0;
+}
+.buttonWork{
+	display: inline-block;
+	padding: 0;
+	padding:0 5px ;
+	margin:0;
+	margin-bottom: 5px;
+	line-height: 40px;
+	font-size: 14px;
+	 height: 42px; 
+	width: 270px;
+	background-color: rgba(0, 0, 0, 0.6); 
+	color: white;
+	text-shadow: 0px 0px 17px rgba(0, 0, 0, 1);
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: text-top;
+	-webkit-box-shadow: 0px 2px 12px 2px white;
+-moz-box-shadow: 0px 2px 12px 2px white;
+box-shadow: 0px 2px 12px 2px white;
+	 transition: all 0.3s 
+}
+.small {
+width: 140px;
+
+}
+.buttonWork:focus,
+.buttonWork:hover{
+	background-color: rgba(0, 0, 0, 0.9);
+ 	border: 1px solid black;
+ 	box-shadow: 0px 2px 12px 6px white;
+ font-size: 15px;  
+
+}
+
+.wrapButton, .wrapper{
+	 margin-top: 20px; 
+	margin-left: -15px;
+}
+.thumbnail{
+background-color: rgba(0, 0, 0, 0.5); 	
+}
+.thumbnail h4{
+	text-align: center;
+}
+.nav-tabs li a{
+	line-height: 20px;
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: white;
+	text-shadow: 0px 0px 17px rgba(0, 0, 0, 1);
+	border: none;
+	transition: all 0.4s
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: rgba(0, 0, 0, 0.7);
+	border:  none;
+	font-size: 16px;
+}
+
+.tabs-left >ul.nav-tabs{
+	padding-right: 0px;
+	margin-right: 0px;
+	border:  none;
+	z-index: 1
+
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: none;
+	color: white;
+	font-size: 16px;
+}
+
+.tab-content, .wrapper {
+
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	 text-shadow: 0px 0px 17px rgba(0, 0, 0, 1); 
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 0px 5px 5px 5px;
+	-moz-border-radius: 0px 5px 5px 5px;
+	border-radius:0px 5px 5px 5px;
+	font-size: 18px;
+	margin-bottom: 50px;
+	padding-left: 50px
+
+}
+
+.container{
+	margin-top: 10px;
+
+	margin-bottom: 50px;
+	
+}
+.footer .container{
+	text-align: center;
+	margin-bottom: 0px;	
+}
+.footer .container a{ 
+	color: white;
+	font-size: 16px;
+	vertical-align: text-top;
+	margin-right: 30px;
+}
+.tab-content {
+	padding: 5%;
+}
